@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pioneer Group</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .section {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    #home {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    #home h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .team-member {
+      flex-basis: calc(50% - 20px);
+      margin-bottom: 30px;
+    }
+
+    .team-member img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .team-member h4 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    .team-member p {
+      font-size: 16px;
+    }
+
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Pioneer Group</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="container">
+      <h2>Welcome to Pioneer Group</h2>
+      <p>Providing mineral drinking water on-demand, 24/7</p>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id quam eu velit consectetur tristique. Ut
+        tincidunt leo eu magna aliquet, sit amet scelerisque sem volutpat.</p>
+    </div>
+  </section>
+
+  <!-- Our Team Section -->
+  <section id="team" class="section">
+    <div class="container">
+      <h2>Our Team</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="team-member1.jpg" alt="Team Member 1">
+          <h4>Debashish Mullick</h4>
+          <p>Director</p>
+        </div>
+        <div class="team-member">
+          <img src="team-member1.jpg" alt="Team Member 2">
+          <h4>Arka Roy</h4>
+          <p>CEO</p>
+        </div>
+        <!-- Add more team members here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Office Address</h4>
+          <p>8/17 Sahid Nagar<br> Kolkata:- 700078</p>
+          <h5> Phone Number</h5>
+          <p>+917003902105</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="row gallery">
+        <div class="col-md-4">
+          <img src="gallery1.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="col-md-4">
+          <img src="gallery2.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="col-md-4">
+          <img src="gallery3.jpg" alt="Gallery Image 3">
+        </div>
+        <div class="col-md-4">
+          <img src="gallery4.jpg" alt="Gallery Image 3">
+        </div>
+        <div class="col-md-4">
+          <img src="gallery5.jpg" alt="Gallery Image 3">
+        </div>
+        <div class="col-md-4">
+          <img src="gallery6.jpg" alt="Gallery Image 3">
+        </div>
+        <!-- Add more gallery images here -->
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
